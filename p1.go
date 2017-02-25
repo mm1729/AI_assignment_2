@@ -17,8 +17,11 @@ type SatProblem struct {
 func main() {
 	fmt.Println("Hello, world!")
 	//readCFFiles()
-	s := processCFFile("./uf/uf20/uf20-01.cnf")
-	fmt.Println(s)
+	s := processCFFile("./uf/uf75/uf75-02.cnf")
+	//fmt.Println(s)
+	alg := NewGeneticAlgorithm(s, 10)
+	alg.Run()
+
 }
 
 /***********************************************************
